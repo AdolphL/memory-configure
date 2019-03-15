@@ -1,0 +1,11 @@
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8080/eureka
+spring:
+  application:
+    name: configure-center
+  cloud:
+    config:
+      discovery:
+        service-id: configure-center
