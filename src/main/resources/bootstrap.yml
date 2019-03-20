@@ -5,6 +5,7 @@ eureka:
   instance:
     prefer-ip-address: true
     ip-address: hellopeng.top
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
 spring:
   application:
     name: configure-center
