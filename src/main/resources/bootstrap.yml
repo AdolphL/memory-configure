@@ -4,7 +4,7 @@ eureka:
       defaultZone: http://hellopeng.top:8088/eureka
   instance:
     prefer-ip-address: true
-    instance-id: ${spring.cloud.client.ip-address}:${server.port}
+    ip-address: hellopeng.top
 spring:
   application:
     name: configure-center
