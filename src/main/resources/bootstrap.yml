@@ -1,7 +1,10 @@
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://172.18.0.2:8080/eureka
+      defaultZone: http://hellopeng.top:8088/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.cloud.client.ip-address}:${server.port}
 spring:
   application:
     name: configure-center
